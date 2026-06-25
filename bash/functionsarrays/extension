@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Description: Functions in Bash
+
+
+get_extensions() {
+	local filename="$1"
+	echo "${filename##*.}"
+}
+
+ext=$(get_extensions "document.v1.txt")
+echo "the file extension is $ext"
+# txt

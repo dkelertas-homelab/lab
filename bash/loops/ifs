@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Description: Loops in Bash
+
+while IFS= read -r -d '' file; do
+    echo "Found: $file"
+done < <(find . -name "*.txt" -print0)
+
+
+

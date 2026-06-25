@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Description: Loops in Bash
+
+for i in {1..5}; do
+    [[ $i -eq 3 ]] && continue
+    touch "$i.txt"
+done
+# Outputs: 1 2 4 5
+
+

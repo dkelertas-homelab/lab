@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Description: Do a task
+
+print_numbered(){
+	local items=("$@")
+	i=1
+	for item in "${items[@]}"; do
+		echo "$i) $item"
+		((i++))
+	done
+}
+
+tasks=("Buy milk" "Walk dog" "write code")
+print_numbered "${tasks[@]}"
+
+

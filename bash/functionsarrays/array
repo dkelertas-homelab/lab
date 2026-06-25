@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Description: Arrays in Bash
+
+fruits=("apple" "banana" "orange")
+fruits+=("grape")
+
+for fruit in "${fruits[@]}"; do
+	echo "I like $fruit"
+done
