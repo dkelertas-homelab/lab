@@ -20,3 +20,15 @@ spec:
           name: mealie
           ports:
             - containerPort: 9000
+          volumeMounts:
+          - mountPath: /cache
+            name: cache-volume
+        - image: nginx
+          name: testpod
+          volumeMounts:
+          - mountPath: /cachetestpod
+            name: cache-volume
+      volumes:
+      - name: cache-volume
+        emptyDir:
+          sizeLimit: 500Mi
