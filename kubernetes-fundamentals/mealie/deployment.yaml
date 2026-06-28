@@ -25,3 +25,5 @@ spec:
             name: mealie-data
       volumes:
         - name: mealie-data
+          persistentVolumeClaim:
+            claimName: mealie-data
