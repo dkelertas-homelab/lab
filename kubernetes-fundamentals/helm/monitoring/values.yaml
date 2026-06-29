@@ -1,0 +1,3 @@
+grafana:
+  defaultDashboardsInterval: 2m
+  adminPassword: "HelloWorld"   # obviously for testing only, plain text security risk
